@@ -4,7 +4,6 @@
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
     --fonte-principal: 'Inter';
-    --botao-azul-efeito: #3c92fa;
 }
 
 body {
@@ -21,7 +20,7 @@ body {
 }
 
 .principal {
-    background-image: url("");
+    background-image: url("img/Background.png");
     background-repeat: no-repeat;
     background-size: contain;
     align-items: center;
@@ -31,6 +30,7 @@ body {
 .container {
     height: 100vh;
     display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .container__botao {
@@ -49,17 +49,17 @@ body {
 }
 
 .container__aviso {
-    font-size: 15px;
+    font-size: 12px;
     color: var(--cinza-secundario);
 }
 
 .container__titulo {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 700;
 }
 
 .container__imagem {
-    margin: 50% 50% 2em 0;
+    margin: 1em 0 2em 0;
 }
 
 .container__caixa {
@@ -138,17 +138,4 @@ body {
     margin: 1em 0;
     color: var(--cinza-secundario);
     font-size: 14px;
-}
-
-.lista__link a:hover {
-    color: var(--botao-azul);
-}
-
-.lista__link a:active {
-    color: purple;
-}
-
-.container__botao:hover {
-    background-color: var(--botao-azul-efeito);
-    color: var(--cor-de-fundo);
 }
